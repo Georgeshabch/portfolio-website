@@ -30,20 +30,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="!scroll-smooth">
-      <body  className="relative bg-gray-50 pt-28 text-gray-950 transition-all 
+      <body data-new-gr-c-s-check-loaded="14.1231.0"
+        data-gr-ext-installed="" className="relative bg-gray-50 pt-28 text-gray-950 transition-all 
                          sm:pt-36 ">
-      <div className="absolute right-[11rem] top-[-6rem] -z-10 h-[31.25rem] w-[31.25rem]
+        <div className="absolute right-[11rem] top-[-6rem] -z-10 h-[31.25rem] w-[31.25rem]
                      rounded-full bg-[#946263] blur-[10rem] dark:bg-[#fbe2e3] sm:w-[68.75rem]"></div>
         <div className="absolute left-[-35rem] top-[-1rem] -z-10 h-[31.25rem] w-[50rem] rounded-full bg-[#676394]
                         blur-[10rem] dark:bg-[#dbd7fb] sm:left-[-30rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem]
                         xl:left-[-15rem] 2xl:left-[-5rem]"></div>
 
-        
-          <ActiveSectionContextProvider>
-            <Header />
-            {children}
-            <Footer />
-          </ActiveSectionContextProvider>
+
+        <ActiveSectionContextProvider>
+          <Header />
+          {children}
+          <Footer />
+        </ActiveSectionContextProvider>
         <Toaster position="top-right" />
       </body>
     </html>
