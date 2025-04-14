@@ -1,3 +1,5 @@
+import './tailwind.config.js';
+
 const config = {
   plugins: ["@tailwindcss/postcss"],
 };
